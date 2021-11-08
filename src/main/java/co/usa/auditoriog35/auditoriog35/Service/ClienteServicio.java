@@ -48,6 +48,9 @@ public class ClienteServicio {
                 if(cliente.getName()!=null){
                     e.get().setName(cliente.getName());
                 }
+                if(cliente.getAge()!=null){
+                    e.get().setAge(cliente.getAge());
+                }
                 clienteRepositorio.guardar(e.get());
                 return e.get();
             } else {
